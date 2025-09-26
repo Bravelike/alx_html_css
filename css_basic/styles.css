@@ -23,3 +23,7 @@ aside {
 article, aside {
     overflow-y: auto;
 }
+.Buny {
+    width: 150px;
+    border-radius: 50%;
+}
