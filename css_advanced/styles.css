@@ -1,0 +1,269 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+
+
+
+body {
+    font-family: "Source Sans Pro", "Spin Cycle OT", sans-serif;
+    
+}
+
+.hero {
+    min-height: 100vh;
+    height: auto;
+    max-width: 1440px;
+    background-image: url(./images/background.png);
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    padding: 0 100px 87px 100px;
+}
+
+header {
+    padding: 30px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: green; */
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+}
+.logo .logo-img1{
+    width: 38px;
+}
+
+
+ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    font-size: 12px;
+}
+
+ul li a {
+    color: #fff;
+    text-decoration: none;
+    
+}
+.hero-section{
+    margin-top: 110px;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hero-text h1 {
+    font-size: 120px;
+    color: #fff;
+    font-weight: bold;
+}
+.span-box {
+    display: flex;
+    justify-content: center;
+    gap: 59px;
+    margin: 10px 0 30px 0;
+}
+
+.span-box span {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.hero-text button {
+    background-color: #C271FF;
+    font-size: 14px;
+    padding: 13px 20px;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+.hero-intro {
+    margin-top: 125px;
+}
+.hero-intro h2 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: normal;
+    color: #fff;
+    margin-bottom: 110px;
+
+}
+.hero-intro .purple-span {
+    font-weight: bold;
+    color: #C271FF;
+}
+
+.intro-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.intro-card {
+    max-width: 150px;
+    width: 150px;
+}
+.intro-card img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.intro-text h3 {
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+}
+.intro-text p {
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    font-weight: 100px;
+    font-style: italic;
+}
+
+
