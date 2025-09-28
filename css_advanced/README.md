@@ -21,8 +21,7 @@ How to Run
     Open Index.html in your browser
     Enjoy!
 
-Live Demo
-I really dont know how to do that in a multilayer repository.
+
 
 # Project - Home Page
 
@@ -36,6 +35,9 @@ A Home page project for me to practice Css Box Model,alignment, spacing,layout, 
 ## Screenshots
 HTML:
 ![Screenshot 1](./Screenshot%202025-09-27%20at%2012-52-36%20Document.png )
+
+Completed with Css:
+![Screenshot 2](./Screenshot%202025-09-28%20at%2022-10-05%20Document.png )
 
 
 ## Technologies Used
