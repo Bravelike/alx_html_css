@@ -101,7 +101,9 @@ nav,
 section {
     display: block;
 }
-
+* {
+    box-sizing: border-box;
+}
 body {
     line-height: 1;
 }
@@ -309,7 +311,7 @@ ul li a {
     background-color: #fff;
     min-height: 530px;
     height: auto;
-    padding: 80px 106px;
+    padding: 80px 100px;
 }
 
 .tutorial-heading {
@@ -406,4 +408,75 @@ ul li a {
 
 
 }
+
+/* Membership Section  */
+
+.membership-section {
+    min-height: 500px;
+    height: auto;
+    background-color: #071629;
+    padding-top: 70px;
+    padding-bottom: 50px;
+}
+
+
+.membership-section  h2{
+    font-size: 32px;
+    font-weight: 100;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 58px;
+}
+
+.membership-section span {
+    font-weight: bold;
+    color: #C271FF;
+}
+
+.membership-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+.membership-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 280px;
+    padding: 50px;
+}
+.membership-card h3 {
+    margin-top: 26px;
+    margin-bottom: 13px;
+    font-size: 18px;
+    font-weight: 900;
+    color: #fceeee;
+}
+.membership-card p {
+    font-size: 14px;
+    font-weight: 100;
+    color: #fceeee;
+    text-align: center;
+
+}
+.membership-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.membership-button button {
+    margin-top: 85px;
+    background-color: #C271FF;
+    border: none;
+    border-radius: 20px;
+    padding: 13px 20px;
+    font-size: 14px;
+    color: #fff;
+    font-weight: normal;
+}
+
+
 
