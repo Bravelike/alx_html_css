@@ -1,246 +1,105 @@
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-}
-
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-    display: block;
-}
 
 * {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    line-height: 1;
+    font-family: 'Source Sans Pro','Lato',sans-serif;;
 }
 
-ol,
-ul {
-    list-style: none;
-}
+/* header styles  */
 
-blockquote,
-q {
-    quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-    content: '';
-    content: none;
-}
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
-body {
-    font-family: "Source Sans Pro", "Spin Cycle OT", sans-serif;
-}
-
-.hero-section {
-    min-height: 100vh;
-    height: 100%;
+header {
+    width: 100%;
+    height: auto;
     background-image: url(./images/headphones_hero_1.jpg);
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-    padding: 0 100px;
     position: relative;
+    color: #fff;
 }
 
 
-
-.hero-section::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.4);
-    /* dark overlay */
+.header {
+    padding: 2rem 10% 30px;
 }
 
-.hero-intro,
-header {
-    position: relative;
-    /* keeps text above overlay */
-}
-
-header {
+header .header nav {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding:20px 0;
+    
 }
 
-.logo img {
-    max-width: 200px;
+ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.header nav img {
     width: 160px;
     height: 32px;
 }
-
-.nav-links {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
+header li {
+    list-style-type: none;
 }
-.nav-link {
+
+.header a {
+    text-decoration: none;
     font-size: 12px;
     font-weight: bold;
     color: #fff;
 }
-
-.nav-link a {
-    text-decoration: none;
-    color: inherit;
+.header a:hover{
+    color: #ff6565;
     cursor: pointer;
 }
-.nav-link a:hover{
-    color: #FF6565;
+
+.header-content {
+    margin: 15rem auto 0 auto;
+    width: 75%;
 }
 
-
-.hero-intro {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 200px;
-    text-align: center;
-    
-}
-
-.hero-heading {
-    margin-bottom: 40px;
-
-}
-
-.hero-heading h2 {
+.title {
     font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 10px;
-    color: #fff;
-    /* max-width: 600px; */
+    font-weight: 700;
+    text-align: center;
+    white-space: normal;
 }
 
-.hero-heading p {
+.title::after {
+    content: "Lorem ipsum dolor set amet lorem ipsum dolor set";
+    display: block;
     font-size: 16px;
-    font-weight: bold;
-    color: #fff;
+    position: relative;
+    margin: 0.25rem auto;
+    max-width: 80%;
+    white-space: normal;
+    word-wrap: break-word;
+    text-align: center;
+    line-height: 1.5;
 }
 
-.cta {
-    background-color: #FF6565;
-    color: #fff;
+#cta {
+    display: block;
+    margin: 2rem auto 65px;
+    background-color: #ff6565;
     border: none;
-    padding: 13px 31px;
-    border-radius: 20px;
+    border-radius: 25px;
+    color: #fff;
     font-size: 14px;
-    font-weight: bold;
-    cursor: pointer;
-    margin-bottom: 65px;
+    font-weight: 700;
+    padding: 13px 30px;
 }
 
-.hero-text {
+.header-content p {
     max-width: 650px;
     width: 637px;
     font-size: 16px;
@@ -249,6 +108,49 @@ header {
     line-height: 26px;
     text-align: center;
     padding: 5px;
+    margin: 0 auto 29px;
+
 }
 
 
+@media (max-width: 1024px) {
+    header {
+        background-position: 42% 50%;
+    }
+
+    .header-content {
+        width: 90%;
+        margin-top: 15rem;
+    }
+
+    .title {
+        font-size: 1.8rem;
+    }
+
+    #cta {
+        padding: 12px 24px;
+    }
+}
+
+@media(max-width: 600px){
+    header {
+        background-position: 35% 50%;
+    }
+    .header {
+        padding: 2rem 1% 30px;
+    }
+
+    nav ul {
+        display: none;
+    }
+    nav img {
+        margin: 0 auto;
+    }
+
+    .header-content {
+        margin-top: 18rem;
+    }
+    .header-content p {
+        width: 100%;
+    }
+}
